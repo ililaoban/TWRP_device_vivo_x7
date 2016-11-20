@@ -1,0 +1,9 @@
+/system       ext4         /dev/block/mmcblk0p24 
+/data         ext4         /dev/block/mmcblk0p49    rw,discard,nosuid,nodev,noatime,nodiratime,inline_xattr,inline_data  wait,check,encryptable=/dev/block/platform/soc.0/by-name/metadata
+/cache        ext4         /dev/block/mmcblk0p25 
+/boot         emmc         /dev/block/mmcblk0p21
+/recovery     emmc         /dev/block/mmcblk0p22
+/misc	      emmc         /dev/block/mmcblk0p27   flags=fsflags=noatime,nosuid,nodev,barrier=1,noauto_da_alloc;mounttodecrypt
+＃/sdcard       vfat         /dev/block/mmcblk1p1
+/external_sd  auto         /dev/block/mmcblk1p1  /dev/block/mmcblk1     flags=display="Micro SDcard";storage;wipeingui;removable;andsec
+/usb_otg      auto         /dev/block/sda1        /dev/block/sda           flags=display="USB-OTG";storage;wipeingui;removable
